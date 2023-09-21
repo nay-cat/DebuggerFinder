@@ -1,6 +1,6 @@
 # fuckbuggers
 otra tool de mierda más llega a mi github para que te puedan seguir acusando de intentar ratear el pc del jugador
-[descargar](https://github.com/nay-cat/fuckbuggers/releases/download/v1/fckbuggers.exe)
+# ![descargar](https://github.com/nay-cat/fuckbuggers/releases/download/v1/fckbuggers.exe)
 
 
 # que es
