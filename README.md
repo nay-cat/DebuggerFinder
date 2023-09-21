@@ -1,8 +1,8 @@
 # fuckbuggers
 otra tool de mierda más llega a mi github para que te puedan seguir acusando de intentar ratear el pc del jugador
 
-#descargar
-![descarga](https://github.com/nay-cat/fuckbuggers/releases/download/v1/fckbuggers.exe)
+# DESCARGAR
+https://github.com/nay-cat/fuckbuggers/releases/download/v1/fckbuggers.exe
 
 # que es
 con esta grandisima mierda podrás analizar los archivos firmados del pc y luego reanalizar esos archivos no firmados, si no entendiste pruebala y ya
