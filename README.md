@@ -12,3 +12,8 @@ con esta grandisima mierda podrás analizar los archivos firmados del pc y luego
 ![image](https://github.com/nay-cat/fuckbuggers/assets/63517637/fa2ad869-8c62-46ef-a170-9a5d3958db55)
 
 ![image](https://github.com/nay-cat/fuckbuggers/assets/63517637/b3646fe9-b2f6-4396-a226-fd21c5544ff0)
+
+# archivos
+los archivos se abren solos, si no, están en %temp% bajo el nombre de
+`fb-unsigned.txt`
+`fb3-antipiracyapps.txt`
