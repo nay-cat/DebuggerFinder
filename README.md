@@ -7,7 +7,6 @@ https://github.com/nay-cat/fuckbuggers/releases/download/v1/DebuggerFinder.exe
 # que es
 con esta grandisima mierda podrás analizar los archivos firmados del pc y luego reanalizar esos archivos no firmados, si no entendiste pruebala y ya
 
-
 ![image](https://github.com/nay-cat/fuckbuggers/assets/63517637/0731f6d1-6878-471b-918a-d00459b0bdf3)
 
 ![image](https://github.com/nay-cat/fuckbuggers/assets/63517637/b5176287-2740-437f-a516-f031d10f39f8)
@@ -20,3 +19,4 @@ con esta grandisima mierda podrás analizar los archivos firmados del pc y luego
 los archivos se abren solos, si no, están en %temp% bajo el nombre de
 `fb-unsigned.txt`
 `fb3-antipiracyapps.txt`
+`fb-errorlogs.txt` - Errores respecto a acceso de carpetas
