@@ -34,6 +34,12 @@ namespace FuckBuggers
 
         static void Main(string[] args)
         {
+            if (!IsAdmin())
+            {
+                response.Add("No");
+                response.Add("Admin");
+                response.Add("Perms");
+            }
             status = true;
             WindowsIdentity identity = WindowsIdentity.GetCurrent();
             Console.ForegroundColor = ConsoleColor.Yellow;
@@ -43,12 +49,15 @@ namespace FuckBuggers
 
         static void SearchTask(string[] args)
         {
+            response.Clear();
             var searchTask = Task.Run(() => searchForExeFiles(folder));
             Console.WriteLine("Press enter to stop the search");
             Console.ReadLine();
             Console.WriteLine("Checking files....");
             status = false;
             strFucker();
+            WriteToTemp("fb-unsigned.txt", unsignedExes);
+            WriteToTemp("fb-errorlogs.txt", errors);
             Console.ReadLine();
         }
 
@@ -57,6 +66,7 @@ namespace FuckBuggers
             string outputFileName = Path.Combine(Path.GetTempPath()) + "fb3-antipiracyapps.txt";
             try
             {
+                List<string> copyOfUnsignedExes = new List<string>(unsignedExes);
                 using (StreamWriter writer = new StreamWriter(outputFileName, false, Encoding.UTF8))
                 {
                     writer.WriteLine("Potential suspicious executables: ");
@@ -64,6 +74,9 @@ namespace FuckBuggers
                     {
                         foreach (string unsigned in unsignedExes)
                         {
+                            checkedUnsigned++;
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.Write($"\rChecked files: " + checkedUnsigned);
                             foreach (string rrr in urmom)
                             {
                                 if (ContainsStr(unsigned, rrr))
@@ -153,6 +166,12 @@ namespace FuckBuggers
                 string filePath = Path.Combine(tempFolder, name);
                 File.WriteAllLines(filePath, unsignedExesList);
             }
+        }
+        static bool IsAdmin()
+        {
+            WindowsIdentity identity = WindowsIdentity.GetCurrent();
+            WindowsPrincipal principal = new WindowsPrincipal(identity);
+            return principal.IsInRole(WindowsBuiltInRole.Administrator);
         }
     }
 }
