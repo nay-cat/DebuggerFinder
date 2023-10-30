@@ -1,7 +1,7 @@
 # DebuggerFinder
 
 # DESCARGAR
-https://github.com/nay-cat/fuckbuggers/releases/download/v1/DebuggerFinder.exe
+https://github.com/nay-cat/fuckbuggers/releases/download/v1.5/DebuggerFinder.exe
 
 # que es
 con esta grandisima mierda podrás analizar los archivos firmados del pc y luego reanalizar esos archivos no firmados, si no entendiste pruebala y ya
