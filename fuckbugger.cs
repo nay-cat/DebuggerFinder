@@ -14,9 +14,6 @@ namespace FuckBuggers
     {
         /*
          * El código es bastante malo
-
-         * Tuve que rehacerlo varias veces, el código es malo, lo sé, pero lo importante
-         * es que cumple su función, lo hice en unas 5 horas.
          * 
          * Seguramente no lo actualice más por el código de mierda que tiene
          */
